@@ -1,0 +1,12 @@
+#service manifest
+apiVersion: v1
+kind: Service
+metadata:
+  name: swoom-app-service
+spec:
+  type: LoadBalancer 
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: swoom-app
