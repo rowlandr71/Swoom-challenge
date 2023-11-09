@@ -42,6 +42,8 @@
     * kubectl apply -f swoom-apply.yaml
     * kubectl apply -f swoom-apply-service.yaml
 
+There exists a LivenessProbe and ReadinessProbe that returns a code 200 indicating the pod is running, hence triggers a restart. See kubernetes/swoom-app.yaml.
+
 # Web URL to the Web Server
 Web Server URL: http://af150be088aea404aab2545db4f9bd55-1480971674.us-east-1.elb.amazonaws.com/
 
