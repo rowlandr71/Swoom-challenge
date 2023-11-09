@@ -1,7 +1,8 @@
 # Swoom-challenge
 
 
-![Diagram](Swoom-challenge/swoomdiagram.png)
+![Diagram](./swoom-diagram.png)
+
 
 # Using terraform (HCL), provision a Kubernetes cluster (AWS EKS)
 
