@@ -29,6 +29,8 @@
   2. Kubernetes Cluster
 
 * Deploying the application.
+
+  Dockerfile for the container can be found in kubernetes/Dockerfile
     * cd kubernetes/
     * docker build -t swoom-app .
     " ensure that your have logged in to a docker registry of your choice"
@@ -37,5 +39,7 @@
     " update the swoom-app.yaml deployment manifest file with your image"
     * kubectl apply -f swoom-apply.yaml
     * kubectl apply -f swoom-apply-service.yaml
-    
-Dockerfile for the container can be found in kubernetes/Dockerfile
+
+# Web URL to the Web Server
+Web Server URL: 
+Monitoring Dashboard URL:
