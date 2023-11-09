@@ -46,3 +46,5 @@
 Web Server URL: http://af150be088aea404aab2545db4f9bd55-1480971674.us-east-1.elb.amazonaws.com/
 
 Monitoring Dashboard URL: http://af4218da127dd4a89a88769f6add1d22-1284007714.us-east-1.elb.amazonaws.com/d/ec5487c1-8405-431c-b628-334ac0ac7964/new-dashboard?orgId=1&from=1699539027410&to=1699560627410
+
+Prometheuus Endpoint: http://a31bb457ab2374fdc9ffeba1404dafde-551271074.us-east-1.elb.amazonaws.com/
