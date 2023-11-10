@@ -44,9 +44,27 @@
 
 There exists a LivenessProbe and ReadinessProbe that returns a code 200 indicating the pod is running, hence triggers a restart. See kubernetes/swoom-app.yaml.
 
-# Web URL to the Web Server
+Web URL to the Web Server
 Web Server URL: http://af150be088aea404aab2545db4f9bd55-1480971674.us-east-1.elb.amazonaws.com/
+
+# Monitoring Dashboard using Prometheus and Grafana
+
+To install Prometheus Helm Chart on Kubernetes Cluster, run this helm install command:
+* helm install prometheus prometheus-community/prometheus
+* kubectl expose service prometheus-server --type=LoadBalancer --target-port=9090 --name=prometheus-server-ext
+
+To install Grafana Helm Chart on Kubernetes Cluster, run this helm install command:
+* helm install grafana grafana/grafana
+* kubectl expose service grafana --type=LoadBalancer --target-port=3000 --name=grafana-ext
 
 Monitoring Dashboard URL: http://af4218da127dd4a89a88769f6add1d22-1284007714.us-east-1.elb.amazonaws.com/d/ec5487c1-8405-431c-b628-334ac0ac7964/new-dashboard?orgId=1&from=1699539027410&to=1699560627410
 
 Prometheuus Endpoint: http://a31bb457ab2374fdc9ffeba1404dafde-551271074.us-east-1.elb.amazonaws.com/
+
+# Technological Stack
+
+* Terraform: https://developer.hashicorp.com/terraform/intro/use-cases
+* Helm: https://helm.sh/docs/intro/using_helm/
+* Kubernetes: https://kubernetes.io/docs/concepts/overview/
+* Prometheus: https://prometheus.io/
+* Grafana: https://grafana.com/grafana/
